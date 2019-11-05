@@ -3,16 +3,62 @@
 
 h1{
     text-align: center;
-    font-family: /*'Arvo'*/'Nunito', 'Times New Roman', Times, serif;
+    font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
 
 h2{
     text-align: center;
     font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
-h3{
+.name{/*"The Code Review"*/
+    background: midnightblue;
+    color: lightgray;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 1.5em;
+    padding: 20px;
+
+}
+.title{/*Sign up for our newsletter*/
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+h3{/*"Get the lastest....*/
     text-align: center;
     font-family: 'Nunito', 'Times New Roman', Times, serif;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    width: 100%;
+    padding: 40px;
+    cursor: pointer;
+    background: mediumaquamarine;
+    border-radius: 5px;
+    font-family: 'Arvo', 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+    font-size: 1.5em;
 }
