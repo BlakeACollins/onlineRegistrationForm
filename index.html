@@ -1,0 +1,110 @@
+<!--Created by Blake Collins-->
+<!DOCTYPE html>
+<html lang="en>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Registration Form">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Nunito&display=swap" rel="stylesheet">
+    
+    <title>FEWD Project 3</title>
+</head>
+
+
+<body>
+
+    <div class="name">
+    <h2>The Code Review</h2>
+    </div>
+
+
+    <div class="title">
+        <h1>Signup for Our Newsletter</h1>
+        <h3>Get the lastest news on how your code is doing right in your inbox.</h3>
+    </div>
+
+    <form action="index.html" method="post">
+
+         <fieldset>
+             <legend> Contact Information</legend>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" placeholder="required">
+
+            <label for="email">Email Address:<label>
+            <input type="text" id=email name="user_email" placeholder="required">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="user_phone">
+
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" id="streetAddress" name="user_address">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="user_city">
+
+            <label for="state">State:</label>
+            <input type="select" id="state" name="user_state">
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="user_zip">
+        </fieldset>
+
+        <fieldset>
+            <legend>Newsletter</legend>
+
+            <div class="typeOfNews">
+                <h3>Select the newsletter youy would like to recieve.</h3>
+                <input type="checkbox" name="htmlNews" value="html"> HTML News<br>
+                <input type="checkbox" name="cssNews" value="css"> CSS News<br>
+                <input type="checkbox" name="javaScriptNews" value="js"> JavaScript News<br>
+
+                <h3>Newsletter Format</h3>
+                <input type="radio" name="htmlFormat" value="htmlForm"> HTML<br>
+                <input type="radio" name="plainText" value="plain"> Plain text<br>
+            </div>
+
+            <div class="topic">
+                    <label for="otherTopic">Other Topics You'd Like to Hear About:</label>
+                    <textarea id="otherTopic" name="user_topic"></textarea>
+            </div>
+
+            <div class="button">
+            <button type="submit">Sign Up</button>
+            </div>
+
+        </fieldset>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
