@@ -27,25 +27,73 @@ h2{
 }
 
 h3{/*"Get the lastest....*/
-    text-align: center;
+    text-align: left;
     font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
+form {
+    max-width: 450px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+ 
+  label{
+    font-size: 1em;
+    font-family: 'Source Code Pro', 'Times New Roman', Times, serif;
+}
+legend{
+    font-size: 1.5em;
 
 
+}
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="address"],
+  input[type="city"],
+  input[type="state"],
+  input[type="zip"],
+  textarea,
+  select{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+  }
 
+  input[type="checkbox"]{
+    font-size:1em;
+  }
+  
 
+  .topic{
+      margin-bottom: 15px;
+  }
+  .format{
+    margin-bottom: 15px;
 
+  }
+  textarea{
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+.typeOfNews{
 
-
-
-
-
-
-
-
-
-
-
+    padding-bottom: 25px;
+}
 
 button{
     width: 100%;
