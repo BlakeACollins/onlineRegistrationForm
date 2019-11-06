@@ -1,5 +1,8 @@
 /*Created By Blake Collins*/
 
+body{
+    margin: 15px;
+}
 
 h1{
     text-align: center;
@@ -30,32 +33,25 @@ h3{/*"Get the lastest....*/
     text-align: left;
     font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
-form {
-    max-width: 450px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
-  }
- 
-  label{
+.lastestNews{
+    text-align: center;
+}
+label{
     font-size: 1em;
     font-family: 'Source Code Pro', 'Times New Roman', Times, serif;
 }
 legend{
     font-size: 1.5em;
-
-
 }
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="address"],
-  input[type="city"],
-  input[type="state"],
-  input[type="zip"],
-  textarea,
-  select{
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="city"],
+input[type="state"],
+input[type="zip"],
+textarea,
+select{
     background: rgba(255,255,255,0.1);
     border: none;
     font-size: 16px;
@@ -64,8 +60,8 @@ legend{
     outline: 0;
     padding: 15px;
     width: 90%;
-    background-color: #e8eeef;
-    color: #8a97a0;
+    background-color: #aeb2b3;
+    color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
     
@@ -109,4 +105,40 @@ button{
     1px 1px 0 #000;
     text-align: center;
     font-size: 1.5em;
+}
+
+
+@media screen and (min-width: 768px){
+
+    head, body, footer{
+        max-width: 80%;
+    }
+
+    .lastestNews{
+        text-align: center;
+    }
+    .typeOfNews{
+        font-size: 1.25em;
+    }
+      textarea{
+        height: 125px;
+        
+      }
+
+      input{
+          max-width: 80%;
+      }
+      .input-selection{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          
+      }
+      
+      #zip {
+        width: 20%;
+        margin-right: 50%;
+      }
+
+
 }
