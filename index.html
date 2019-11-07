@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<div class="everything">
     <head>
+        <title>FEWD Project 3</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Online Registration Form">
         <meta charset="UTF-8">
@@ -14,12 +15,12 @@
         <link href="https://fonts.googleapis.com/css?family=Arvo|Nunito&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
         
-        <title>FEWD Project 3</title>
+       
         <header>
                 <div class="name">
                     <h2>The Code Review</h2>
                 </div>
-            </header>
+         </header>
 
     </head>
 
@@ -48,22 +49,22 @@
 
         <div class="input-selection">
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="user_phone" placeholder="required" required>
+            <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx" required>
         </div>
 
         <div class="input-selection">
             <label for="streetAddress">Street Address:</label>
-            <input type="address" id="streetAddress" name="user_address" placeholder="required" required>
+            <input type="address" id="streetAddress" name="user_address" placeholder="Street Address" required>
         </div>
 
         <div class="input-selection">
             <label for="city">City:</label>
-            <input type="text" id="city" name="user_city" placeholder="required">
+            <input type="text" id="city" name="user_city" placeholder="City">
         </div>
 
         <div class="input-selection">
             <label for="state">State:</label>
-            <select>
+            <select class="select">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -120,10 +121,11 @@
             
        
             <label for="zip">Zip Code:</label>
-            <input type="zip" id="zip" name="user_zip" placeholder="required" pattern="[0-9]{5}" title="Five digit zip code" required>
-     
+            <input type="zip" id="zip" name="user_zip" placeholder="Zip" pattern="[0-9]{5}" title="Five digit zip code" required>
+        </fieldset>
+
 <footer>
-    </fieldset>
+    
 
         <fieldset class="newletter">
             <legend>Newsletter</legend>
@@ -131,30 +133,38 @@
             
             <h3>Select the newsletter you would like to recieve.</h3>
 
-             <div class="typeOfNews"></div>
+             <div class="typeOfNews">
                 <input type="checkbox" name="htmlNews" value="html" required> HTML News<br>
                 <input type="checkbox" name="cssNews" value="css" required> CSS News<br>
                 <input type="checkbox" name="javaScriptNews" value="js" required> JavaScript News<br>
             </div>
 
-            <h3>Newsletter Format</h3>
-
             <div class="format">
+                <h3>Newsletter Format</h3>
+
                 <input type="radio" name="htmlFormat" value="htmlForm" required> HTML<br>
                 <input type="radio" name="plainText" value="plain" required> Plain text<br>
-            </div>
+         </div>
 
             <div class="topic">
                     <label for="otherTopic">Other Topics You'd Like to Hear About:</label>
                     <textarea id="otherTopic" name="user_topic"></textarea>
             </div>
-
             <div class="button">
-            <button type="submit">Sign Up</button>
+                <button type="submit">Sign Up</button>
             </div>
-
         </fieldset>
+
+        <p class="copyright">Copyright &copy; 2019 The Code Review</p>
+
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"src="http://jigsaw.w3.org/css-validator/images/vcss"alt="Valid CSS!" />
+            </a>
+        </p>
+    
     </footer>
 </form>
 </body>
+</div>
 </html>
