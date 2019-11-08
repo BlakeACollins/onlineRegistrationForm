@@ -68,6 +68,15 @@ select{
     margin-bottom: 30px;
     
   }
+  .input-selection{
+      display: block
+      
+  }
+  
+  label{ 
+      display: block;
+      width: 150px;
+  }
   #zip {
     width: 35%;
     margin-right: 50%;
@@ -148,6 +157,10 @@ input:focus, textarea:focus {
         max-width: 70%;
     }
 
+    label{
+        width: 300px;
+    }
+
     input{
         max-width: 80%;
     }
@@ -157,8 +170,8 @@ input:focus, textarea:focus {
         justify-content: space-between;
     }
     #zip {
-        width: 20%;
-        margin-right: 50%;
+        
+        width: 27%;    
     }
     .newsletter{
         margin: 0 auto;
