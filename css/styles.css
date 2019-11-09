@@ -33,7 +33,7 @@ h2{
 
 h3{/*"Get the lastest....*/
     text-align: left;
-    font-family: 'Nunito', 'Times New Roman', Times, serif;
+    font-family: 'Arvo', 'Times New Roman', Times, serif;
 }
 .lastestNews{
     text-align: center;
@@ -66,41 +66,38 @@ select{
     color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
-    
-  }
-  .input-selection{
+    text-align: right;
+    transition-duration: 1.5s;
+}
+
+.input-selection{
       display: block
-      
-  }
-  
-  label{ 
-      display: block;
-      width: 150px;
-  }
-  #zip {
+}
+
+label{ 
+      display: inline;
+}
+
+ #zip {
     width: 35%;
     margin-right: 50%;
 }
 
-  input[type="checkbox"]{
+input[type="checkbox"]{
     font-size:1em;
-  }
+}
  
-  .topic{
-      margin-bottom: 15px;
-      margin: 0 auto;
-  }
-  .format{
+.topic{
+    display:inline;
+}
+.format{
     margin-bottom: 15px;
-
-  }
-  textarea{
+}
+textarea{
     margin-top: 15px;
+    width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  
-  }
+}
 .typeOfNews{
      padding-bottom: 25px;
 }
@@ -125,6 +122,7 @@ button{
 input:focus, textarea:focus {
     background-color:#05b6f7;
     border: 2px solid #F47E58;
+    
 }
 .copyright{
     text-align: center;
@@ -154,7 +152,7 @@ input:focus, textarea:focus {
     }
       textarea{
         height: 125px;
-        max-width: 70%;
+        max-width: 100%;
     }
 
     label{
@@ -180,6 +178,4 @@ input:focus, textarea:focus {
         max-width: 70%;
         margin: 0 auto;
     }
-    
-
 }
