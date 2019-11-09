@@ -2,30 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Created by Blake Collins-->
-    <head>
+<head>
         <meta charset="UTF-8">   
         <title>FEWD Project 3</title>
         <meta name="description" content="Online Registration Form">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         
-        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Arvo|Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-    </head>
-
+</head>
 
 <body>
-        <div class="everything">
         <header>
                 <div class="name">
                     <h2>The Code Review</h2>
                 </div>
          </header>
+    <div class="everything">
+      
 
     <div class="title">
         <h1>Signup for Our Newsletter</h1>
@@ -64,7 +64,7 @@
 
         <div class="input-selection">
             <label for="state">State:</label>
-            <select class="select">
+            <select class="select" id="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -125,9 +125,6 @@
             </div>
         </fieldset>
 
-<footer>
-    
-
         <fieldset class="newletter">
             <legend>Newsletter</legend>
 
@@ -135,16 +132,20 @@
          <h3>Select the newsletter you would like to recieve.</h3>
 
              <div class="typeOfNews">
-                <input type="checkbox" name="htmlNews" value="html" required> HTML News<br>
-                <input type="checkbox" name="cssNews" value="css" required> CSS News<br>
-                <input type="checkbox" name="javaScriptNews" value="js" required> JavaScript News<br>
+                <label for="htmlNews"></label>
+                <input type="checkbox" id="htmlNews" name="htmlNews" value="html" required> HTML News<br>
+                <label for="cssNews"></label>
+                <input type="checkbox" id="cssNews" name="cssNews" value="css" required> CSS News<br>
+                <label for="jsNews"></label>
+                <input type="checkbox" id="jsNews" name="javaScriptNews" value="js" required> JavaScript News<br>
             </div>
 
             <div class="format">
                 <h3>Newsletter Format</h3>
-
-                <input type="radio" name="htmlFormat" value="htmlForm" required> HTML<br>
-                <input type="radio" name="plainText" value="plain" required> Plain text<br>
+                <label for="htmlFormat"></label>
+                <input type="radio" id="htmlFormat" name="htmlFormat" value="htmlForm" required> HTML<br>
+                <label for="plain"></label>
+                <input type="radio" id="plain" name="plainText" value="plain" required> Plain text<br>
          </div>
 
             <div class="topic">
@@ -155,7 +156,8 @@
                 <button type="submit">Sign Up</button>
             </div>
         </fieldset>
-
+</form>
+    <footer>
         <p class="copyright">Copyright &copy;2019 The Code Review</p>
 
         <p>
@@ -165,7 +167,7 @@
         </p>
     
     </footer>
-</form>
-</body>
 </div>
+</body>
+
 </html>
